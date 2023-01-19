@@ -9,8 +9,8 @@
   </div>
 
   <div class="tasks">
-  <!-- <Component-->
-  <Task v-for="task in $store.state.tasks" :key="i" :task="task" />
+    <!-- User made component, we call it "Task" here -->
+  <Task v-for="(task, i) in $store.state.tasks" :key="i" :task="task" />
   {{ $store.state.tasks }}
   </div>
 
